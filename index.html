@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Сучасний Вчитель: Технології в Освіті</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  
+  <style>
+    /* Основні стилі */
+  body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: 
+    linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)),
+    url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #e0e0e0;
+  line-height: 1.6;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px 60px;
+}
+
+
+    /* Фіксований хедер */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #1f1f1f;
+      padding: 15px 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #81d4fa;
+      margin: 0;
+      cursor: default;
+    }
+    nav a {
+      color: #90caf9;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover,
+    nav a:focus {
+      color: #64b5f6;
+      outline: none;
+    }
+
+    /* Паддінг для body щоб не сховати контент під фіксованим хедером */
+    main {
+      padding-top: 90px;
+    }
+
+    article {
+      background: #1e1e1e;
+      padding: 25px 30px;
+      margin-bottom: 35px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    article:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(33, 150, 243, 0.7);
+    }
+    article h2 {
+      color: #64b5f6;
+      margin-top: 0;
+    }
+    p, ul {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: #90caf9;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover,
+    a:focus {
+      color: #42a5f5;
+      text-decoration: underline;
+      outline: none;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 15px;
+      border-radius: 6px;
+      filter: brightness(0.9);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+      transition: filter 0.3s ease;
+    }
+    img:hover {
+      filter: brightness(1);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: #777;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      padding-bottom: 30px;
+    }
+
+    /* Кнопка "Вгору" */
+    #toTopBtn {
+      position: fixed;
+      bottom: 40px;
+      right: 30px;
+      background-color: #64b5f6;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(100, 181, 246, 0.7);
+      transition: background-color 0.3s ease;
+      display: none;
+      z-index: 1000;
+    }
+    #toTopBtn:hover {
+      background-color: #42a5f5;
+    }
+    #toTopBtn:focus {
+      outline: 2px solid #42a5f5;
+    }
+
+    /* Адаптивність */
+    @media (max-width: 600px) {
+      body {
+        padding: 0 15px 60px;
+      }
+      article {
+        padding: 20px;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+      }
+      nav a {
+        margin: 10px 10px 0 0;
+      }
+      header h1 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Сучасний Вчитель</h1>
+  <nav>
+    <a href="#post1">Технології</a>
+    <a href="#post2">Інтерактивні дошки</a>
+    <a href="#post3">Платформи</a>
+    <a href="#post4">Додатки</a>
+    <a href="#post5">Безпека</a>
+    <a href="#post6">Дистанційка</a>
+    <a href="#post7">Штучний інтелект</a>
+  </nav>
+</header>
+
+<main>
+  <article id="post1">
+    <h2>1. Роль сучасних технологій у освіті</h2>
+    <p>Сучасні технології кардинально змінюють освітній процес, роблячи його більш інтерактивним та доступним для кожного учня. Впровадження цифрових інструментів сприяє розвитку критичного мислення та мотивації.</p>
+    <p>Детальніше: <a href="https://osvita.ua/modern-education" target="_blank" rel="noopener">Цифрова трансформація освіти</a></p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Education_Technology_Infographic.svg/640px-Education_Technology_Infographic.svg.png" alt="Інфографіка про технології в освіті" />
+  </article>
+
+  <article id="post2">
+    <h2>2. Використання інтерактивних дошок у класі</h2>
+    <p>Інтерактивні дошки дозволяють вчителю візуалізувати матеріал, робити уроки більш динамічними та залучати учнів до спільної роботи.</p>
+    <p>Детальніше: <a href="https://smarttech.com" target="_blank" rel="noopener">SMART Technologies</a></p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Interactive_whiteboard_in_classroom.jpg/640px-Interactive_whiteboard_in_classroom.jpg" alt="Інтерактивна дошка в класі" />
+  </article>
+
+  <article id="post3">
+    <h2>3. Освітні платформи та онлайн-ресурси</h2>
+    <p>Популярні платформи для навчання: Google Classroom, Moodle, Kahoot допомагають організувати процес, проводити вікторини та контролювати успішність.</p>
+    <ul>
+      <li><a href="https://classroom.google.com/" target="_blank" rel="noopener">Google Classroom</a></li>
+      <li><a href="https://moodle.org/" target="_blank" rel="noopener">Moodle</a></li>
+      <li><a href="https://kahoot.com/" target="_blank" rel="noopener">Kahoot</a></li>
+    </ul>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Kahoot_logo.svg/320px-Kahoot_logo.svg.png" alt="Kahoot logo" />
+  </article>
+
+  <article id="post4">
+    <h2>4. Мобільні додатки для навчання</h2>
+    <p>Корисні додатки для учнів та вчителів: Duolingo для вивчення мов, Photomath для розв’язання задач та Quizlet для запам’ятовування термінів.</p>
+    <ul>
+      <li><a href="https://www.duolingo.com/" target="_blank" rel="noopener">Duolingo</a></li>
+      <li><a href="https://photomath.app/" target="_blank" rel="noopener">Photomath</a></li>
+      <li><a href="https://quizlet.com/" target="_blank" rel="noopener">Quizlet</a></li>
+    </ul>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Duolingo_logo.svg/320px-Duolingo_logo.svg.png" alt="Duolingo logo" />
+  </article>
+
+  <article id="post5">
+    <h2>5. Безпека в інтернеті для школярів</h2>
+    <p>Важливо навчити дітей безпечно користуватися інтернетом: не розголошувати особисту інформацію, перевіряти джерела інформації, уникати небезпечних сайтів.</p>
+    <p>Офіційний ресурс: <a href="https://osvita.diia.gov.ua/" target="_blank" rel="noopener">Дія.Цифрова освіта</a></p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Internet_Safety_Logo.svg/320px-Internet_Safety_Logo.svg.png" alt="Безпека в інтернеті" />
+  </article>
+
+  <article id="post6">
+    <h2>6. Технології для дистанційного навчання</h2>
+    <p>Дистанційне навчання стає все більш актуальним. Воно має свої переваги, як-от гнучкість, і виклики — відсутність живого спілкування.</p>
+    <p>Рекомендації Міністерства освіти: <a href="https://mon.gov.ua/ua/osvita/distancijne-navchannya" target="_blank" rel="noopener">Дистанційне навчання</a></p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Online_learning_icon.svg/320px-Online_learning_icon.svg.png" alt="Дистанційне навчання" />
+  </article>
+
+  <article id="post7">
+    <h2>7. Майбутнє освіти: штучний інтелект і робототехніка</h2>
+    <p>Штучний інтелект і робототехніка відкривають нові можливості для освіти — від персоналізованого навчання до автоматизації рутинних завдань.</p>
+    <p>Курси по робототехніці: <a href="https://roboticsacademy.org/" target="_blank" rel="noopener">Robotics Academy</a></p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Robot_icon.svg/320px-Robot_icon.svg.png" alt="Робототехніка в освіті" />
+  </article>
+</main>
+
+<footer>
+  <p>© 2025 Сучасний Вчитель. Всі права захищені.</p>
+</footer>
+
+<button id="toTopBtn" aria-label="Повернутись вгору">&#8679;</button>
+
+<script>
+  // Показ кнопки при скролі вниз
+  const toTopBtn = document.getElementById('toTopBtn');
+
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+      toTopBtn.style.display = 'block';
+    } else {
+      toTopBtn.style.display = 'none';
+    }
+  });
+
+  // Плавний скрол вгору при кліку
+  toTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>
+
+</body>
+</html>
